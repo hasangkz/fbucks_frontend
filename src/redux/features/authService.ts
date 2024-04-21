@@ -25,7 +25,9 @@ const logout = () => {
 };
 
 const login = async (userData: any) => {
-  const response = await axios.post(API_LOGIN_URL, userData);
+  const response = await axios.post(API_LOGIN_URL, userData, {
+    headers: { 'Access-Control-Allow-Origin': '*' },
+  });
 
   if (response.data) {
     localStorage.setItem('user', JSON.stringify(response.data));
