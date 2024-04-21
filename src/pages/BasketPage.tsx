@@ -161,10 +161,8 @@ const BasketPage = () => {
             dataSource={basket.basketItems}
             columns={columns}
             bordered
-            pagination={true}
           />
           <div className='cart-total flex justify-end mt-4'>
-            {/* @ts-ignore */}
             <Card className='w-72'>
               <div className='flex justify-between'>
                 <span>Ara Toplam</span>
