@@ -1,0 +1,29 @@
+.category-item {
+  @apply transition text-3xl ease-in-out hover:-translate-y-1 min-w-[200px] cursor-pointer text-black hover:text-black hover:underline;
+}
+
+.hr-style {
+  border-top: 3px solid green;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(107 114 128);
+  color: white;
+}
+
+.edit-icon:hover {
+  background: white;
+  color: #742a2a;
+}
+.add-icon:hover {
+  background: white;
+  color: #006241;
+}
+.thick {
+  font-weight: bold;
+}
