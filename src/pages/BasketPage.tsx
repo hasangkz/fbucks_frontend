@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Header from '../components/header/Header';
 import { Button, Card, Table, message, Popconfirm } from 'antd';
 import CreateBill from '../components/basket/CreateBill';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteProduct } from '../redux/features/BasketSlice';
-import { DeleteFilled } from '@ant-design/icons';
+import { AiFillDelete } from 'react-icons/ai';
 
 const BasketPage = () => {
   // @ts-ignore
@@ -125,7 +125,7 @@ const BasketPage = () => {
           >
             <div className='text-center'>
               <Button type='link' danger size='large'>
-                <DeleteFilled />
+                <AiFillDelete />
               </Button>
             </div>
           </Popconfirm>

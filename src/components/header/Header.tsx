@@ -1,12 +1,12 @@
-import React from 'react';
 import {
-  CoffeeOutlined,
-  LogoutOutlined,
-  FileDoneOutlined,
-  PieChartOutlined,
-  ShoppingOutlined,
-  TeamOutlined,
-} from '@ant-design/icons';
+  AiOutlineTeam,
+  AiFillFileText,
+  AiFillPieChart,
+  AiOutlineLogout,
+  AiOutlineSearch,
+  AiFillShopping,
+} from 'react-icons/ai';
+
 import { Input } from 'antd';
 import { Badge } from 'antd';
 import { NavLink, useLocation } from 'react-router-dom';
@@ -55,7 +55,7 @@ const Header = ({ setSearch }: any) => {
               onChange={(e: any) => setSearch(e.target.value.toLowerCase())}
               placeholder='Ne aramıştınız?'
               size='large'
-              prefix={<CoffeeOutlined className='text-2xl mb-2' />}
+              prefix={<AiOutlineSearch className='text-2xl ' />}
               className='rounded-full max-w-[1200] h-14 border-b-2 border-green-600 focus-within:border-green-600'
             />
           </div>
@@ -77,7 +77,7 @@ const Header = ({ setSearch }: any) => {
                 to={'/cart'}
                 className='menu-link flex flex-col hover:text-[#54399e] transition-all'
               >
-                <ShoppingOutlined className='md:text-4xl text-2xl' />
+                <AiFillShopping className='md:text-4xl text-2xl' />
                 <span
                   className='md:text-[18px] text-[12px]'
                   style={{ fontSize: '20px' }}
@@ -97,7 +97,7 @@ const Header = ({ setSearch }: any) => {
             }}
             className='menu-link flex flex-col hover:text-[#40a9ff] transition-all'
           >
-            <FileDoneOutlined className='md:text-3xl text-xl ' />
+            <AiFillFileText className='md:text-3xl text-xl ml-5' />
             <span className='md:text-[18px] text-[12px]'>Faturalar</span>
           </NavLink>
           <NavLink
@@ -110,7 +110,7 @@ const Header = ({ setSearch }: any) => {
             }}
             className='menu-link flex flex-col hover:text-[#cce751] transition-all'
           >
-            <PieChartOutlined className='md:text-3xl text-xl ' />
+            <AiFillPieChart className='md:text-3xl text-xl ml-4' />
             <span className='md:text-[18px] text-[12px]'>İstatistik</span>
           </NavLink>
 
@@ -126,7 +126,7 @@ const Header = ({ setSearch }: any) => {
               onClick={onLogout}
               className='menu-link flex flex-col hover:text-[#d83232] transition-all'
             >
-              <LogoutOutlined className='md:text-3xl text-xl' />
+              <AiOutlineLogout className='md:text-3xl text-xl' />
               <span className='md:text-[18px] text-[12px]'>Çıkış</span>
             </NavLink>
           ) : (
@@ -140,7 +140,7 @@ const Header = ({ setSearch }: any) => {
               to={'/register'}
               className='menu-link flex flex-col hover:text-[#d83232] transition-all'
             >
-              <TeamOutlined className='md:text-3xl text-xl' />
+              <AiOutlineTeam className='md:text-3xl text-xl' />
               <span className='md:text-[18px] text-[12px]'>Üye Ol</span>
             </NavLink>
           )}

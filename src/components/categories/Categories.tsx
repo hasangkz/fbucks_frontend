@@ -1,5 +1,4 @@
-import React from 'react';
-import { PlusOutlined, EditOutlined } from '@ant-design/icons';
+import { AiFillPlusSquare, AiFillMinusSquare } from 'react-icons/ai';
 import { useState, useEffect } from 'react';
 import AddCategory from './AddCategory';
 import './style.css';
@@ -50,7 +49,7 @@ const Categories = ({
           onClick={() => setIsAddModalOpen(true)}
         >
           <div className='icon add-icon'>
-            <PlusOutlined className='md:text-3xl' />
+            <AiFillPlusSquare className='md:text-3xl' />
           </div>
         </li>
         <li
@@ -58,7 +57,7 @@ const Categories = ({
           onClick={() => setIsEditModalOpen(true)}
         >
           <div className='icon edit-icon'>
-            <EditOutlined className='md:text-3xl' />
+            <AiFillMinusSquare className='md:text-3xl' />
           </div>
         </li>
         <AddCategory

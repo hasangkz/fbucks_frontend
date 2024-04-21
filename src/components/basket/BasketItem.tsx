@@ -1,5 +1,9 @@
-import React from 'react';
-import { PlusOutlined, MinusOutlined, DeleteOutlined } from '@ant-design/icons';
+import {
+  AiFillPlusSquare,
+  AiFillMinusSquare,
+  AiFillDelete,
+} from 'react-icons/ai';
+
 import { useDispatch } from 'react-redux';
 import {
   deleteProduct,
@@ -46,9 +50,9 @@ const BasketItem = ({ item }: any) => {
                     onClick={handleMinusItem}
                   >
                     {item.quantity === 1 ? (
-                      <DeleteOutlined style={{ color: '#d83232' }} />
+                      <AiFillDelete style={{ color: '#d83232' }} />
                     ) : (
-                      <MinusOutlined />
+                      <AiFillMinusSquare />
                     )}
                   </div>
                   <div>
@@ -60,7 +64,7 @@ const BasketItem = ({ item }: any) => {
                     className='text-2xl cursor-pointer dark:text-white basketButton'
                     onClick={handlePlusItem}
                   >
-                    <PlusOutlined />
+                    <AiFillPlusSquare />
                   </div>
                 </div>
                 <div className='flex flex-row gap-x-2 text-xl justify-start items-center dark:text-white'>

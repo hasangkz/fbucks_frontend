@@ -1,6 +1,6 @@
 import { Button, Form, Input, message, Modal, Table } from 'antd';
-import React, { useEffect, useState } from 'react';
-import { SaveFilled, DeleteFilled, EditFilled } from '@ant-design/icons';
+import { useEffect, useState } from 'react';
+import { AiFillSave, AiFillDelete, AiFillEdit } from 'react-icons/ai';
 
 const EditCategory = ({
   isEditModalOpen,
@@ -76,13 +76,13 @@ const EditCategory = ({
         return (
           <div className='flex justify-start space-x-1.5 ml-5'>
             <Button type='link' onClick={() => setEditingRow(record)}>
-              <EditFilled style={{ fontSize: '24px' }} />
+              <AiFillEdit style={{ fontSize: '24px' }} />
             </Button>
             <Button htmlType='submit' type='link'>
-              <SaveFilled style={{ fontSize: '24px', color: 'green' }} />
+              <AiFillSave style={{ fontSize: '24px', color: 'green' }} />
             </Button>
             <Button danger type='link' onClick={() => setDeleteRow(record)}>
-              <DeleteFilled style={{ fontSize: '24px' }} />
+              <AiFillDelete style={{ fontSize: '24px' }} />
             </Button>
           </div>
         );

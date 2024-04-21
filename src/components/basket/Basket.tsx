@@ -1,6 +1,5 @@
-import React from 'react';
 import { Button, message } from 'antd';
-import { ShoppingOutlined } from '@ant-design/icons';
+import { AiFillShopping } from 'react-icons/ai';
 import { useDispatch, useSelector } from 'react-redux';
 import BasketItem from './BasketItem';
 import { emptyBasket } from '../../redux/features/BasketSlice';
@@ -39,7 +38,7 @@ const Basket = () => {
                 <Button
                   onClick={() => navigate('/cart')}
                   type='text'
-                  icon={<ShoppingOutlined />}
+                  icon={<AiFillShopping />}
                   size='large'
                   className='flex items-center justify-center w-full text-white font-semibold hover:text-green-900 py-2 px-4 rounded bg-green-900'
                 >

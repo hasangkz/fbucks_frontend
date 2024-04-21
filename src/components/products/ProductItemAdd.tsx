@@ -1,5 +1,4 @@
-import React from 'react';
-import { PlusOutlined } from '@ant-design/icons';
+import { AiFillPlusSquare } from 'react-icons/ai';
 import { Button, Form, Input, message, Modal, Select } from 'antd';
 const ProductItemAdd = ({
   isAddModalOpen,
@@ -29,7 +28,7 @@ const ProductItemAdd = ({
   return (
     <>
       <div className='product-item shadow-lg hover:shadow-2xl select-none transform motion-safe:hover:-translate-y-2 motion-safe:hover:scale-80 transition ease-in-out duration-500 border border-gray-200 bg-white rounded-lg flex justify-center items-center cursor-pointer'>
-        <PlusOutlined className='text-6xl ' />
+        <AiFillPlusSquare className='text-6xl ' />
       </div>
       <Modal
         title='Yeni Ürün Ekle'

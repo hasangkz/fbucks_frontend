@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import './products.css';
+import { useState } from 'react';
 import ProductItem from './ProductItem';
 import ProductItemAdd from './ProductItemAdd';
 import { useNavigate } from 'react-router-dom';
-import { EditOutlined } from '@ant-design/icons';
+import { AiFillEdit } from 'react-icons/ai';
+
+import './products.css';
 
 const Products = ({
   productsData,
@@ -42,7 +43,7 @@ const Products = ({
         <div>
           <button onClick={() => navigate('/products')}>
             <div className='product-item shadow-lg hover:shadow-2xl select-none transform motion-safe:hover:-translate-y-2 motion-safe:hover:scale-80 transition ease-in-out duration-500 border border-gray-200 bg-white rounded-lg flex justify-center items-center cursor-pointer'>
-              <EditOutlined className='text-6xl ' />
+              <AiFillEdit className='text-6xl ' />
             </div>
           </button>
         </div>
