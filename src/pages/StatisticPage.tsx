@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../components/header/Header';
 import StatisticComp from '../components/statistic/StatisticComp';
-import { Pie } from '@ant-design/plots';
+// import { Pie } from '@ant-design/plots';
 import { useSelector } from 'react-redux';
 import { Spin } from 'antd';
 const StatisticPage = () => {
@@ -154,7 +154,7 @@ const StatisticPage = () => {
                 }}
               >
                 {/* @ts-ignore */}
-                <Pie {...pieConfig} />
+                {/* <Pie {...pieConfig} /> */}
               </div>
             </div>
           </div>
