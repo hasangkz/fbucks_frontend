@@ -23,7 +23,7 @@ const PrintBill = ({ isModalOpen, setIsModalOpen, customer }: any) => {
             <div className='logo my-6'>
               <img
                 className='object-contain h-20 w-20 '
-                src='https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/297px-Starbucks_Corporation_Logo_2011.svg.png?20170312192423'
+                src={'images/fbu.png'}
                 alt='logo'
               />
             </div>

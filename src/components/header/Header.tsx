@@ -38,14 +38,14 @@ const Header = ({ setSearch }: any) => {
             <NavLink to='/'>
               <img
                 className='object-contain h-20 w-20 '
-                src='https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/297px-Starbucks_Corporation_Logo_2011.svg.png?20170312192423'
+                src={'images/fbuLogo.png'}
                 alt='logo'
               />
             </NavLink>
           </div>
           <div className='header-logo-exp'>
             <NavLink to='/'>
-              <h2 className='md:text-4xl text-3xl font-bold '>STARBUCKS</h2>
+              <h2 className='md:text-4xl text-4xl font-bold '>FBUCKS</h2>
             </NavLink>
           </div>
         </div>

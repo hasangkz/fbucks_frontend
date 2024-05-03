@@ -49,7 +49,7 @@ const RegisterPage = () => {
         <div className='xl:px-20 px-20 w-full flex flex-col h-full justify-center relative'>
           <img
             className='object-contain h-60 w-60 mb-2 center'
-            src='https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/297px-Starbucks_Corporation_Logo_2011.svg.png?20170312192423'
+            src={'images/fbu.png'}
             alt='logo'
           />
           <Form layout='vertical' name='basic' onFinish={onFinish} form={form}>
